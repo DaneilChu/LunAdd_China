@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_bottom_reply"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical" >
+
+    <!-- 普通底部导航 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_reply"
+
+        >
+
+        <EditText
+            android:id="@+id/et_comment"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_toLeftOf="@+id/iv_emoji"
+            android:layout_toStartOf="@id/iv_emoji"
+            android:hint="@string/add_comment"
+            android:layout_centerVertical="true"
+            android:imeOptions="actionDone"
+            android:paddingLeft="@dimen/spacing_small"
+            android:paddingRight="@dimen/spacing_small"
+            android:background="@color/float_transparent"
+
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/iv_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:focusable="false"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_send"
+            android:layout_toStartOf="@id/btn_send"
+            android:paddingRight="20dp"
+            android:src="@drawable/emoji_btn_normal" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/spacing_small"
+            android:layout_marginRight="@dimen/spacing_small"
+            android:background="@drawable/send_selector"
+            android:enabled="false"
+            />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emojicon_menu_container"
+        ></FrameLayout>
+
+</LinearLayout>

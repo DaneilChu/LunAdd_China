@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/btn_change_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ripple_effect"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/textview_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_vertical"
+            android:text="@string/default_name"
+            android:textColor="@color/colorBlack"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_people_name"
+            android:drawableStart="@drawable/ic_people_name"
+            android:drawableRight="@drawable/ic_to_other_activity"
+            android:drawableEnd="@drawable/ic_to_other_activity"
+            android:textSize="16sp"
+            android:layout_weight="3"/>
+
+
+    </LinearLayout>
+    <View
+        android:background="@color/colorGrey"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <LinearLayout
+        android:id="@+id/btn_change_preferlanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/ripple_effect"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="#"
+            android:src="@drawable/ic_prefer_language"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:gravity="center_vertical"
+                android:text="@string/preferlanguage"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/textview_preferlanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/preferlanguage_default"
+                android:textColor="@color/colorGrey"
+                android:textSize="12sp"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:contentDescription="#"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_to_other_activity"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/colorGrey"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:id="@+id/btn_toalarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/ripple_effect"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_vertical"
+            android:text="@string/notification"
+            android:textColor="@color/colorBlack"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_notification"
+            android:drawableStart="@drawable/ic_notification"
+            android:drawableRight="@drawable/ic_to_other_activity"
+            android:drawableEnd="@drawable/ic_to_other_activity"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/colorGrey"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:id="@+id/btn_tolanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/ripple_effect"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_vertical"
+            android:text="@string/language"
+            android:textColor="@color/colorBlack"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_language_setting"
+            android:drawableStart="@drawable/ic_language_setting"
+            android:drawableRight="@drawable/ic_to_other_activity"
+            android:drawableEnd="@drawable/ic_to_other_activity"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/colorGrey"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pen_button">36dp</dimen>
+    <dimen name="item_Width">70dp</dimen>
+    <dimen name="padding_item_width">300dp</dimen>
+    <dimen name="line_spacing">2dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="icon_padding">2dp</dimen>
+    <dimen name="icon_spacing">4dp</dimen>
+
+</resources>

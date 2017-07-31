@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        toolbar:navigationIcon="@drawable/ic_arrow_back_white_24dp"
+        toolbar:title="@string/edit_notification"
+        toolbar:titleTextColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical"
+            android:text="@string/alarm_msg"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/colorGrey"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical"
+            android:text="@string/alarm_song"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"/>
+
+    </LinearLayout>
+    <View
+        android:background="@color/colorGrey"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical"
+            android:text="@string/alarm_vibrate"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"/>
+
+    </LinearLayout>
+    <View
+        android:background="@color/colorGrey"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+
+</LinearLayout>

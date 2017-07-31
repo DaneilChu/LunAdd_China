@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        toolbar:navigationIcon="@drawable/ic_arrow_back_white_24dp"
+        toolbar:title="@string/comment"
+        toolbar:titleTextColor="@color/white"/>
+
+
+    <include
+        android:id="@+id/ll_bottom_reply"
+        layout="@layout/comment_bottom"/>
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeFreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/ll_bottom_reply">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <include
+                    android:id="@+id/card_view"
+                    layout="@layout/item_post_incomment"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/ry_comment"
+                    android:layout_below="@id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

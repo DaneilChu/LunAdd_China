@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fl_error_item"
+        >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/chat_container"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        android:background="@drawable/ripple_effect">
+
+        <TextView
+            android:id="@+id/tv_otherusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/default_otherusername"
+            android:textSize="24sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"/>
+        <TextView
+            android:id="@+id/tv_chatcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:layout_below="@id/tv_otherusername"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"/>
+        <TextView
+            android:id="@+id/tv_chattime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:layout_below="@id/tv_chatcontent"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+
+        <View
+            android:background="@color/colorGrey"
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_waiting"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="@string/wait_response"
+        android:background="@drawable/button_waiting"
+        android:paddingTop="20dp"
+        android:textColor="#fff"
+        android:visibility="visible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/btn_lunadd"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/button"
+        android:drawableTop="@drawable/add_people_w"
+        android:paddingTop="20dp"
+        android:text="@string/add"
+        android:textColor="#fff"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/cancel"
+        style="?android:attr/buttonBarButtonStyle"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_remaining_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remaining_time_default"
+        android:textStyle="italic"
+        android:textSize="24sp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/duration_selector"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"/>
+
+        <TextView
+            android:id="@+id/duration_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/duration_information"
+            android:textStyle="italic"
+            android:textSize="14sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorWhite"
+            android:layout_above="@id/duration_selector"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

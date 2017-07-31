@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3db39e</color>
+    <color name="colorPrimaryDark">#2f8b7a</color>
+    <color name="colorAccent">#3db39e</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrey">#787878</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="duration_value_on">#094673</color>
+    <color name="duration_value_off">#68094673</color>
+    <color name="PrimaryTextColor">#212121</color>
+    <color name="black2">#ffeeeeee</color>
+    <color name="grey500">#9E9E9E</color>
+    <color name="grey600">#757575</color>
+    <color name="grey50">#FAFAFA</color>
+
+
+</resources>
